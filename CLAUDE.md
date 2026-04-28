@@ -43,6 +43,17 @@ Sebastian Raschka's "Build a Large Language Model (From Scratch)" (Manning, ISBN
 - When something is confusing, try a different analogy before adding more detail
 - Call out "this is one of those things worth really getting" vs "this is boilerplate, don't worry about it"
 
+## Hardware & Device Strategy
+- **Mac Mini (M2 Pro, 16GB)** — primary machine, uses MPS (Metal Performance Shaders) for GPU-like acceleration
+- **Second machine with real GPU** — available sometimes, not always
+- **Code must auto-detect the best device**: CUDA GPU > MPS (Apple Silicon) > CPU
+- Use a device selection pattern like:
+  ```python
+  device = torch.device("cuda" if torch.cuda.is_available() else "mps" if torch.backends.mps.is_available() else "cpu")
+  ```
+- This way the same code runs optimally on either machine without changes
+- Project should be on GitHub so Aaron can move between machines
+
 ## Project Structure
 ```
 llm-from-scratch/
