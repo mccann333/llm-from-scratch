@@ -9,7 +9,7 @@ of code in this project has a friendly explanation you can re-read any time.
 | Chapter | Code file | Walkthrough |
 |---|---|---|
 | 2 — Working with Text Data | `code/ch02_text_data.py` | [ch02-explained.md](ch02-explained.md) ✅ |
-| 3 — Coding Attention Mechanisms | `code/ch03_attention.py` | _coming next_ ⏳ |
+| 3 — Coding Attention Mechanisms | `code/ch03_attention.py` | [ch03-explained.md](ch03-explained.md) ✅ |
 | 4 — Implementing a GPT Model | `code/ch04_gpt_model.py` | [ch04-explained.md](ch04-explained.md) ✅ |
 | 5 — Pretraining on Unlabeled Data | `code/ch05_pretraining.py` | [ch05-explained.md](ch05-explained.md) 🚧 _in progress (Listing 5.1)_ |
 
